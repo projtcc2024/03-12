@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: rgb(37, 218, 1);
+    --error-color: #d9534f;
+    --success-color: #28a745;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.message-container {
+    background-color: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.message.success {
+    background-color: var(--success-color);
+    color: #fff;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: var(--error-color);
+    color: #fff;
+    border: 1px solid #f5c6cb;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    text-decoration: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    box-shadow: none;
+}
+

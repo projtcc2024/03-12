@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: rgb(37, 218, 1);
+    --error-color: #d9534f;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos do Formulário de Login */
+.login-container {
+    background-color: var(--second-bg-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #222;
+    color: var(--text-color);
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+.login-container .forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.login-container .forgot-password a {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-container .forgot-password a:hover {
+    color: #fff;
+}
+
+/* Estilos de Erro e Sucesso */
+.error-message, .success-message {
+    background-color: var(--error-color);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px 0;
+    display: none;
+}
+
+/* Estilos de Tela de Redirecionamento */
+.confirm-container {
+    font-size: 2rem;
+    text-align: center;
+    padding: 40px;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.confirm-container i {
+    font-size: 4rem;
+    color: var(--main-color);
+    width: 100px;
+    margin-top: 20px;
+}
+.confirm-container .bx-x-circle {
+    font-size: 4rem;
+    color: red;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.confirm-container h1 {
+    font-size: 2em;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.confirm-container p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.confirm-container .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    gap: 10px;
+    height: 30px;
+}
+
+.confirm-container .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    color: var(--second-bg-color);
+}
+
+.confirm-container .btn:hover {
+    box-shadow: none;
+}
+
